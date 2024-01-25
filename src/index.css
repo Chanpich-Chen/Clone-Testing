@@ -1,0 +1,13 @@
+.custom-border{
+  border-bottom: 1px solid #ccc;
+  padding: 3px;
+  /* margin: 5px; */
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.custom-box-shadow {
+  box-shadow: 50 50px 10px rgba(230, 229, 229, 0.1); /* Adjust values as needed */
+}
