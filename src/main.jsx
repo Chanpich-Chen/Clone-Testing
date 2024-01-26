@@ -9,7 +9,7 @@ import Dashboard from "./Components/Dashboard.jsx";
 import SearchBar from "./Components/ManageEmployee/SearchBar.jsx";
 import { store } from "./redux/store.js";
 import { Provider } from "react-redux";
-import BasicInfo from "./Components/AddEmployee/Indicator/BasicInfo.jsx";
+import BasicInfo from "./Components/AddEmployee/Indicator/BasicInfo/BasicInfo.jsx";
 import Steppers from "./Components/AddEmployee/Indicator/Steppers.jsx";
 const router = createBrowserRouter([
   {
@@ -27,20 +27,17 @@ const router = createBrowserRouter([
       {
         path: "/manageEmployee",
         element: <SearchBar />,
-        
-      },
-      
-      {
-        path:"/basicInfo",
-        element:<BasicInfo/>
       },
 
       {
-         path:"/steppers",
-         element: <Steppers/>
+        path: "/basicInfo",
+        element: <BasicInfo />,
       },
-     
-      
+
+      {
+        path: "/steppers",
+        element: <Steppers />,
+      },
     ],
   },
 ]);
@@ -53,5 +50,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </Provider>
     {/* <App /> */}
   </React.StrictMode>
-  
 );
